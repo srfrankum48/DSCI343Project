@@ -100,32 +100,24 @@ def getLACrimesByCode(code, csvFileLoc):
             writer = csv.writer(csvFile)
             writer.writerows(crimes)
  
-getLACrimesByCode(510, LAcsv)
+#getLACrimesByCode(510, LAcsv)
 #Boston      
-BOCrimes = []
-with open(BOcsv,'r') as csvfile:
-    plots = csv.reader(csvfile, delimiter=',')
-    for row in plots:
-        BOCrimes.append(0)
-        
-        
-        
-'''
-Old code for parsing date 
-def getNYCrimesByCode(pdCode, csvFileLoc):
+def getBostonCrimesByCode(code, csvFileLoc):
     crimes = []
     with open(csvFileLoc,'r') as csvfile:
         plots = csv.reader(csvfile, delimiter=',')
+        crimes.append(next(plots))
         for row in plots:
-            if pdCode == row[8]: #row[8] is pdcode in NYCrimes.csv
-                date = row[1] #row[1] is date and time
-                try:
-                    month = int(date[:2].replace("/",""))
-                    year = int(date[-4:])
-                except:
-                    print(date)
-                else:
-                    if year == 2014 | year == 2015:
-                        NYCrimesMonth2014[month] = NYCrimesMonth2014[month] + 1
-                    NYCrimesMonth2015[month] = NYCrimesMonth2015[month] + 1
-'''
+            try:
+                rowCode = int(row[1])
+            except:
+                print(row[1])
+            else:
+                if rowCode == code:
+                    crimes.append(row)
+        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\BostonCrimeCode' + str(code) + '.csv'
+        with open(csvLoc, 'w', newline='') as csvFile:
+            writer = csv.writer(csvFile)
+            writer.writerows(crimes)              
+        
+getBostonCrimesByCode(3301, BOcsv)
