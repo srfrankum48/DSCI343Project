@@ -8,12 +8,18 @@ Project Work with Data Mapping
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
+#CHANGE ME
+baseDirectory = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\'
 
 #CSVs
 NYcsv = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\NewYorkCrimes.csv'
 SFcsv = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\SanFranciscoCrimes.csv'
 LAcsv = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\LosAngelesCrimes.csv'
 BOcsv = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\BostonCrimes.csv'
+COcsv1 = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\ChicagoCrimes2001to2004.csv'
+COcsv2 = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\ChicagoCrimes2005to2007.csv'
+COcsv3 = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\ChicagoCrimes2008to2011.csv'
+COcsv4 = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\ChicagoCrimes2012to2017.csv'
 
 #Key words to search by
 ASSAULT = "assault"
@@ -36,21 +42,12 @@ def getNYCrimesByCode(code, csvFileLoc):
             else:
                 if rowPDCode == code: #row[8] is pdcode in NYCrimes.csv
                     crimes.append(row)
-        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\NewYorkCrimeCode' + str(code) + '.csv'
+        csvLoc = baseDirectory + "NewYorkCrimeCode" + str(code) + '.csv'
         with open(csvLoc, 'w', newline='') as csvFile:
             writer = csv.writer(csvFile)
             writer.writerows(crimes)
 
 #getNYCrimesByCode(333, NYcsv)
-#data = NYCrimesMonth2014[1:13]
-#print(data)
-#bars = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec') 
-#y_pos = np.arange(len(bars))      
-#plt.bar(bars, data)
-#plt.title(label = 'Crimes per month in LA')
-#plt.xticks(y_pos, bars)
-#plt.show()
-
 #San Francisco
 def getSFCrimesByCode(code, csvFileLoc):
     crimes = []
@@ -65,22 +62,13 @@ def getSFCrimesByCode(code, csvFileLoc):
             else:
                 if rowPDCode == code: #row[13] is category code in SFCrimes.csv
                     crimes.append(row)
-        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\SanFranciscoCrimeCode' + str(code) + '.csv'
+        csvLoc = baseDirectory + "SanFranciscoCrimeCode" + str(code) + '.csv'
         with open(csvLoc, 'w', newline='') as csvFile:
             writer = csv.writer(csvFile)
             writer.writerows(crimes)
 
-'''
-getSFCrimesByCode(4134, SFcsv)
-sfdata = SFCrimes19[1:13]
-print(sfdata)  
-bars = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec') 
-y_pos = np.arange(len(bars))     
-plt.bar(bars, sfdata)
-plt.title(label = 'Crimes per month in SF')
-plt.xticks(y_pos, bars)
-plt.show()
-'''
+
+#getSFCrimesByCode(4134, SFcsv)
 #Los Angeles     
 def getLACrimesByCode(code, csvFileLoc):
     crimes = []
@@ -95,7 +83,7 @@ def getLACrimesByCode(code, csvFileLoc):
             else:
                 if rowCode == code:
                     crimes.append(row)
-        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\LosAngelesCrimeCode' + str(code) + '.csv'
+        csvLoc = baseDirectory + "LosAngelesCrimeCode" + str(code) + '.csv'
         with open(csvLoc, 'w', newline='') as csvFile:
             writer = csv.writer(csvFile)
             writer.writerows(crimes)
@@ -115,9 +103,25 @@ def getBostonCrimesByCode(code, csvFileLoc):
             else:
                 if rowCode == code:
                     crimes.append(row)
-        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\BostonCrimeCode' + str(code) + '.csv'
+        csvLoc = baseDirectory + "BostonCrimeCode" + str(code) + '.csv'
         with open(csvLoc, 'w', newline='') as csvFile:
             writer = csv.writer(csvFile)
             writer.writerows(crimes)              
         
-getBostonCrimesByCode(3301, BOcsv)
+#getBostonCrimesByCode(3301, BOcsv)
+#Chicago 
+def getChicagoCrimesByCode(code, csvFileLoc):
+    crimes = []
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        crimes.append(next(plots))
+        for row in plots:
+            r = row[5]
+            if code == r:
+                crimes.append(row)
+        csvLoc = baseDirectory + "ChicagoCrimeCode" + str(code) + '.csv'
+        with open(csvLoc, 'w', newline='') as csvFile:
+            writer = csv.writer(csvFile)
+            writer.writerows(crimes)
+            
+getChicagoCrimesByCode("0486", COcsv4)
