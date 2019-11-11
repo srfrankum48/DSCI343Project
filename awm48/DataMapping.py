@@ -23,8 +23,7 @@ LACERNY = "lacerny"
 DRUG = "drug"
 
 #New York
-
-def getNYCrimesByCode(pdCode, csvFileLoc):
+def getNYCrimesByCode(code, csvFileLoc):
     crimes = []
     with open(csvFileLoc,'r') as csvfile:
         plots = csv.reader(csvfile, delimiter=',')
@@ -33,25 +32,24 @@ def getNYCrimesByCode(pdCode, csvFileLoc):
             try:
                 rowPDCode = int(row[8])
             except:
-                1 + 1
+                print(row[8])
             else:
-                if rowPDCode == pdCode: #row[8] is pdcode in NYCrimes.csv
+                if rowPDCode == code: #row[8] is pdcode in NYCrimes.csv
                     crimes.append(row)
-        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\NewYorkCrimeCode' + str(pdCode) + '.csv'
+        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\NewYorkCrimeCode' + str(code) + '.csv'
         with open(csvLoc, 'w', newline='') as csvFile:
             writer = csv.writer(csvFile)
             writer.writerows(crimes)
 
-getNYCrimesByCode(333, NYcsv)
-'''
-data = NYCrimesMonth2014[1:13]
-print(data)
-bars = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec') 
-y_pos = np.arange(len(bars))      
-plt.bar(bars, data)
-plt.title(label = 'Crimes per month in LA')
-plt.xticks(y_pos, bars)
-plt.show()
+#getNYCrimesByCode(333, NYcsv)
+#data = NYCrimesMonth2014[1:13]
+#print(data)
+#bars = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec') 
+#y_pos = np.arange(len(bars))      
+#plt.bar(bars, data)
+#plt.title(label = 'Crimes per month in LA')
+#plt.xticks(y_pos, bars)
+#plt.show()
 
 #San Francisco
 SFCrimes = [0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -63,35 +61,27 @@ SFCrimes17 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
 SFCrimes18 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
 SFCrimes19 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
 
-with open(SFcsv,'r') as csvfile:
-    plots = csv.reader(csvfile, delimiter=',')
-    for row in plots:
-        if ASSAULT in row[14].lower():
-            date = row[1]
+def getSFCrimesByCode(code, csvFileLoc):
+    crimes = []
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        crimes.append(next(plots))
+        for row in plots:
             try:
-                month = int(date[5:-3].replace("/",""))
-                year = int(date[:4])
+                rowPDCode = int(row[13])
             except:
-                print("d: ", date)
+                print(row[13])
             else:
-#                print("M: ", month)
-#                print("Y: ", year)
-                if year == 2013:
-                    SFCrimes13[month] = SFCrimes13[month] + 1
-                if year == 2014:
-                    SFCrimes14[month] = SFCrimes14[month] + 1
-                if year == 2015:
-                    SFCrimes15[month] = SFCrimes15[month] + 1
-                if year == 2016:
-                    SFCrimes16[month] = SFCrimes16[month] + 1
-                if year == 2017:
-                    SFCrimes17[month] = SFCrimes17[month] + 1
-                if year == 2018:
-                    SFCrimes18[month] = SFCrimes18[month] + 1
-                if year == 2019:
-                    SFCrimes19[month] = SFCrimes19[month] + 1
-                SFCrimes[month] = SFCrimes[month] + 1
- 
+                if rowPDCode == code: #row[13] is category code in SFCrimes.csv
+                    crimes.append(row)
+        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\SanFranciscoCrimeCode' + str(code) + '.csv'
+        with open(csvLoc, 'w', newline='') as csvFile:
+            writer = csv.writer(csvFile)
+            writer.writerows(crimes)
+
+
+getSFCrimesByCode(4134, SFcsv)
+'''
 sfdata = SFCrimes19[1:13]
 print(sfdata)  
 bars = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec') 
