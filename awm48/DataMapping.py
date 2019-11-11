@@ -52,15 +52,6 @@ def getNYCrimesByCode(code, csvFileLoc):
 #plt.show()
 
 #San Francisco
-SFCrimes = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-SFCrimes13 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-SFCrimes14 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-SFCrimes15 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-SFCrimes16 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-SFCrimes17 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-SFCrimes18 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-SFCrimes19 = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-
 def getSFCrimesByCode(code, csvFileLoc):
     crimes = []
     with open(csvFileLoc,'r') as csvfile:
@@ -79,9 +70,8 @@ def getSFCrimesByCode(code, csvFileLoc):
             writer = csv.writer(csvFile)
             writer.writerows(crimes)
 
-
-getSFCrimesByCode(4134, SFcsv)
 '''
+getSFCrimesByCode(4134, SFcsv)
 sfdata = SFCrimes19[1:13]
 print(sfdata)  
 bars = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec') 
@@ -92,12 +82,25 @@ plt.xticks(y_pos, bars)
 plt.show()
 '''
 #Los Angeles     
-LACrimes = []
-with open(LAcsv,'r') as csvfile:
-    plots = csv.reader(csvfile, delimiter=',')
-    for row in plots:
-        LACrimes.append(0)
-  
+def getLACrimesByCode(code, csvFileLoc):
+    crimes = []
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        crimes.append(next(plots))
+        for row in plots:
+            try:
+                rowCode = int(row[7])
+            except:
+                print(row[7])
+            else:
+                if rowCode == code:
+                    crimes.append(row)
+        csvLoc = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\LosAngelesCrimeCode' + str(code) + '.csv'
+        with open(csvLoc, 'w', newline='') as csvFile:
+            writer = csv.writer(csvFile)
+            writer.writerows(crimes)
+ 
+getLACrimesByCode(510, LAcsv)
 #Boston      
 BOCrimes = []
 with open(BOcsv,'r') as csvfile:
