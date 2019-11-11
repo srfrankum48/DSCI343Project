@@ -123,5 +123,6 @@ def getChicagoCrimesByCode(code, csvFileLoc):
         with open(csvLoc, 'w', newline='') as csvFile:
             writer = csv.writer(csvFile)
             writer.writerows(crimes)
-            
+
+#code for Chicago must be 4 characters long or it won't work           
 getChicagoCrimesByCode("0486", COcsv4)
