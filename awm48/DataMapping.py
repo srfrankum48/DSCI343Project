@@ -6,6 +6,7 @@ Created on Sun Nov 9 19:03:22 2019
 Project Work with Data Mapping
 """
 import csv
+import matplotlib.pyplot as plt
 
 #CHANGE ME
 baseDirectory = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\'
@@ -267,7 +268,7 @@ def getAllOffenseCodesBO(csvFileLoc):
         writer.writerows(codes)        
 
 #getBostonCrimesByCode(BOcsv, 612, 613)
-getAllOffenseCodesBO(BOcsv)        
+#getAllOffenseCodesBO(BOcsv)        
 #Chicago 
 def getChicagoCrimesByCode(csvFileLoc, *codes):
     crimes = []
@@ -356,4 +357,41 @@ def getAllOffenseCodesCO():
 #code for Chicago must be 4 characters long or it won't work           
 #getChicagoCrimesByCode(COcsv4, "0486", "0820")
 #getChicagoCrimesByCodeAllCSVs("0486")
-getAllOffenseCodesCO()
+#getAllOffenseCodesCO()
+        
+#Pie Charts
+        
+def makePieChart(csvFileLoc, title, crimeLimit):
+    sizes = []
+    labels = []
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        next(plots)
+        for row in plots:
+            if int(row[2]) > crimeLimit:
+                sizes.append(int(row[2]))
+                labels.append(row[1])
+    sizes.sort()
+    plt.legend(labels, loc="best")
+    plt.axis('equal')
+    plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+    plt.title(title)
+    fig = plt.gcf()
+    fig.set_size_inches(18.5, 10.5)
+    fig.savefig(baseDirectory + title + '.png', dpi=100)
+    plt.show()     
+
+#csvLocSF = baseDirectory + "SanFranciscoCodesAndNo.csv"
+#makePieChart(csvLocSF, "San Francisco Total Crime", 4000) 
+
+#csvLocSF = baseDirectory + "LosAngelesCodesAndNo.csv"
+#makePieChart(csvLocSF, "Los Angeles Total Crime", 12000) 
+
+#csvLocSF = baseDirectory + "ChicagoCodesAndNo.csv"
+#makePieChart(csvLocSF, "Chicago Total Crime", 50000) 
+
+#csvLocSF = baseDirectory + "BostonCodesAndNo.csv"
+#makePieChart(csvLocSF, "Boston Total Crime", 5000) 
+
+#csvLocSF = baseDirectory + "NewYorkCodesAndNo.csv"
+#makePieChart(csvLocSF, "New York Total Crime", 15000)            
