@@ -1,0 +1,754 @@
+Code,Code Description,Number of Occurences
+64070,Suspicious Occ,3737
+71000,Lost Property,8319
+72000,Non-Criminal,3971
+6244,Larceny Theft,30499
+4134,Assault,6729
+7045,Recovered Vehicle,708
+28150,Malicious Mischief,6518
+6374,Larceny Theft,5264
+28160,Malicious Mischief,3698
+3074,Robbery,1557
+27195,Other Miscellaneous,2121
+16100,Drug Offense,246
+27170,Other Miscellaneous,1850
+16650,Drug Offense,612
+7041,Recovered Vehicle,4933
+64020,Non-Criminal,5624
+19057,Disorderly Conduct,2318
+5051,Burglary,509
+5151,Burglary,695
+71013,Larceny Theft,1672
+64085,Other Miscellaneous,3731
+68060,Traffic Collision,138
+65016,Other Miscellaneous,1643
+62050,Warrant,3080
+28140,Malicious Mischief,136
+7043,Recovered Vehicle,676
+26032,Arson,34
+15200,Offences Against The Family And Children,972
+65010,Traffic Violation Arrest,3013
+7200,Forgery And Counterfeiting,159
+75000,Missing Person,2877
+15040,Offences Against The Family And Children,594
+62020,Warrant,182
+6234,Larceny Theft,76
+51040,Non-Criminal,1729
+28100,Malicious Mischief,1301
+6363,Larceny Theft,1586
+4013,Assault,1745
+7023,Motor Vehicle Theft,820
+75030,Case Closure,997
+6154,Larceny Theft,1143
+12080,Weapons Carrying Etc,364
+26031,Arson,101
+61030,Other,1220
+15041,Offences Against The Family And Children,622
+4012,Assault,590
+4014,Assault,1324
+6246,Larceny Theft,195
+16710,Drug Offense,1451
+6153,Larceny Theft,838
+65015,Other Miscellaneous,1771
+6243,Larceny Theft,3321
+5013,Burglary,875
+6224,Larceny Theft,3770
+68020,Miscellaneous Investigation,1959
+12030,Weapons Offense,648
+7021,Motor Vehicle Theft,4697
+4170,Assault,275
+27130,Other Miscellaneous,727
+6300,Larceny Theft,47
+16030,Drug Offense,105
+6372,Larceny Theft,6830
+7046,Recovered Vehicle,106
+9024,Fraud,1019
+63010,Warrant,4323
+6364,Larceny Theft,1085
+6361,Larceny Theft,457
+16623,Drug Offense,648
+5141,Burglary,126
+6223,Larceny Theft,386
+64000,Civil Sidewalks,37
+4082,Assault,27
+30200,Other Offenses,374
+6304,Larceny Theft,1792
+26170,Other Miscellaneous,955
+16662,Drug Offense,172
+6303,Larceny Theft,1370
+5073,Burglary,1768
+28165,Malicious Mischief,332
+71012,Other Offenses,533
+75025,Non-Criminal,842
+74000,Missing Person,2414
+28166,Malicious Mischief,66
+6242,Larceny Theft,1130
+27175,Other Miscellaneous,357
+6362,Larceny Theft,825
+13075,Prostitution,410
+15051,Offences Against The Family And Children,28
+65030,Other Miscellaneous,32
+5081,Burglary,381
+9027,Fraud,401
+68050,Traffic Collision,180
+16420,Drug Offense,40
+73000,Non-Criminal,72
+5083,Burglary,620
+15017,Sex Offense,291
+19028,Disorderly Conduct,31
+10125,Fraud,175
+5043,Burglary,621
+6241,Larceny Theft,603
+16430,Drug Offense,24
+6112,Larceny Theft,299
+29100,Juvenile Offenses,254
+6240,Larceny Theft,407
+3474,Robbery,219
+7020,Motor Vehicle Theft,656
+19089,Disorderly Conduct,327
+5063,Burglary,31
+16652,Drug Offense,513
+1160,Homicide,15
+9029,Fraud,1516
+71024,Non-Criminal,647
+3401,Robbery,394
+3071,Robbery,329
+3023,Robbery,31
+6152,Larceny Theft,280
+4138,Assault,691
+61040,Other,189
+9150,Forgery And Counterfeiting,106
+6396,Larceny Theft,19
+9264,Fraud,33
+9320,Fraud,2068
+27199,Other Miscellaneous,470
+51050,Non-Criminal,122
+16120,Drug Offense,77
+7025,Motor Vehicle Theft,684
+64015,Non-Criminal,258
+3012,Robbery,85
+3044,Robbery,210
+28135,Malicious Mischief,460
+5053,Burglary,539
+28010,Malicious Mischief,53
+10120,Fraud,31
+5011,Burglary,528
+26080,Other Miscellaneous,1052
+5071,Burglary,1025
+6151,Larceny Theft,150
+3054,Robbery,35
+19400,Disorderly Conduct,148
+7100,Vandalism,264
+12173,Weapons Carrying Etc,105
+15161,Offences Against The Family And Children,754
+65020,Other Miscellaneous,102
+4154,Assault,244
+27171,Other Miscellaneous,169
+27065,Other Miscellaneous,329
+3014,Robbery,737
+6126,Larceny Theft,211
+65050,Other Miscellaneous,315
+7055,Motor Vehicle Theft,660
+6302,Larceny Theft,679
+62060,Warrant,236
+15162,Offences Against The Family And Children,385
+68069,Traffic Collision,91
+19090,Disorderly Conduct,433
+26135,Other Miscellaneous,8
+62030,Warrant,198
+16704,Drug Offense,103
+3011,Robbery,173
+14040,Sex Offense,109
+6220,Larceny Theft,33
+3072,Robbery,180
+6301,Larceny Theft,418
+3472,Robbery,43
+64060,Suspicious Occ,215
+10149,Forgery And Counterfeiting,153
+4104,Assault,145
+4033,Assault,127
+19024,Disorderly Conduct,76
+27010,Other Miscellaneous,150
+68030,Courtesy Report,629
+27300,Other Miscellaneous,47
+4114,Assault,83
+26063,Other Miscellaneous,54
+64010,Non-Criminal,434
+11012,Stolen Property,1038
+5153,Burglary,438
+26213,Other Miscellaneous,4
+3024,Robbery,135
+65057,Other Miscellaneous,11
+65056,Other Miscellaneous,34
+27090,Larceny Theft,377
+12140,Weapons Carrying Etc,9
+15015,Family Offense,298
+16110,Drug Offense,582
+6133,Larceny Theft,24
+9250,Fraud,574
+5014,Larceny Theft,530
+9340,Fraud,140
+12015,Weapons Offense,231
+16622,Drug Offense,190
+6360,Larceny Theft,61
+6221,Larceny Theft,186
+4144,Assault,195
+12120,Weapons Carrying Etc,151
+15151,Offences Against The Family And Children,155
+19055,Disorderly Conduct,66
+6114,Larceny Theft,255
+26105,Other Miscellaneous,62
+16010,Drug Offense,175
+9215,Forgery And Counterfeiting,55
+27040,Other Miscellaneous,12
+6370,Larceny Theft,20
+26200,Other Miscellaneous,66
+6373,Larceny Theft,519
+26028,Other Miscellaneous,18
+6365,Larceny Theft,8
+12027,Weapons Offense,185
+9164,Fraud,123
+71010,Other Offenses,52
+6371,Larceny Theft,301
+12100,Weapons Carrying Etc,231
+60060,Suicide,15
+26036,Arson,52
+5041,Burglary,626
+9015,Forgery And Counterfeiting,134
+6134,Larceny Theft,16
+15095,Offences Against The Family And Children,91
+6381,Larceny Theft,82
+19010,Disorderly Conduct,105
+14010,Sex Offense,20
+65070,Other Miscellaneous,23
+4136,Assault,387
+14020,Sex Offense,120
+12168,Weapons Carrying Etc,235
+73010,Non-Criminal,187
+4011,Assault,215
+30150,Other Offenses,14
+5052,Burglary,56
+6125,Larceny Theft,114
+64080,Suspicious Occ,71
+26030,Arson,244
+9020,Forgery And Counterfeiting,98
+30190,Other Offenses,153
+9031,Stolen Property,80
+68000,Fire Report,207
+6222,Larceny Theft,204
+9026,Fraud,179
+19022,Disorderly Conduct,115
+11014,Stolen Property,12
+16410,Drug Offense,12
+9120,Forgery And Counterfeiting,47
+10110,Fraud,33
+29120,Juvenile Offenses,11
+19050,Disorderly Conduct,123
+5012,Burglary,100
+27110,Other Miscellaneous,36
+64002,Civil Sidewalks,379
+6233,Larceny Theft,43
+3063,Robbery,11
+15016,Sex Offense,25
+68053,Other Offenses,8
+3022,Robbery,31
+7053,Vehicle Impounded,167
+4021,Assault,67
+5072,Burglary,119
+3414,Robbery,104
+6113,Larceny Theft,462
+30080,Other Offenses,75
+6314,Larceny Theft,405
+5123,Burglary,11
+3073,Robbery,184
+26150,Other Miscellaneous,279
+3444,Robbery,32
+9110,Forgery And Counterfeiting,50
+64001,Civil Sidewalks,238
+27082,Other Miscellaneous,2
+28164,Malicious Mischief,29
+19025,Disorderly Conduct,1
+5033,Burglary,96
+26175,Other Miscellaneous,1
+62071,Warrant,191
+30210,Other Offenses,71
+5023,Burglary,42
+60020,Suicide,3
+26210,Other Miscellaneous,15
+26040,Other Miscellaneous,27
+51041,Non-Criminal,98
+6232,Larceny Theft,15
+16210,Drug Offense,28
+26100,Other Miscellaneous,49
+15152,Offences Against The Family And Children,12
+5171,Burglary,76
+6313,Larceny Theft,343
+6386,Larceny Theft,39
+15100,Offences Against The Family And Children,25
+71011,Other Offenses,113
+30007,Other Offenses,5
+15160,Offences Against The Family And Children,45
+7054,Vehicle Misplaced,91
+9330,Fraud,24
+64040,Other Offenses,9
+29130,Juvenile Offenses,1
+16625,Drug Offense,270
+28161,Malicious Mischief,149
+9262,Forgery And Counterfeiting,106
+5143,Burglary,108
+19095,Disorderly Conduct,28
+7026,Motor Vehicle Theft,211
+9040,Fraud,51
+5082,Burglary,101
+7056,Embezzlement,15
+15201,Offences Against The Family And Children,68
+29170,Juvenile Offenses,3
+5142,Burglary,9
+6394,Larceny Theft,150
+5173,Burglary,80
+9016,Forgery And Counterfeiting,89
+16645,Drug Offense,26
+64011,Non-Criminal,3
+26145,Larceny Theft,130
+62010,Warrant,68
+16720,Drug Offense,9
+4092,Assault,84
+10040,Embezzlement,34
+19020,Disorderly Conduct,25
+26141,Other Miscellaneous,58
+10015,Embezzlement,35
+16621,Drug Offense,135
+27198,Other Miscellaneous,32
+4084,Assault,45
+13060,Prostitution,230
+15300,Offences Against The Family And Children,169
+65060,Other Miscellaneous,98
+3052,Robbery,6
+6398,Larceny Theft,12
+16780,Drug Violation,73
+12060,Weapons Offense,31
+60190,Suicide,10
+12010,Weapons Offense,34
+73001,Non-Criminal,9
+60080,Suicide,9
+15155,Offences Against The Family And Children,269
+10045,Embezzlement,66
+5015,Larceny Theft,35
+9310,Fraud,51
+4022,Assault,72
+3084,Robbery,60
+3464,Robbery,5
+7027,Motor Vehicle Theft?,43
+7204,Other Miscellaneous,2
+3081,Robbery,69
+7051,Motor Vehicle Theft,65
+16654,Drug Offense,52
+9173,Fraud,4
+64050,Suspicious Occ,40
+16620,Drug Offense,97
+9140,Forgery And Counterfeiting,3
+11017,Stolen Property,13
+28102,Malicious Mischief,10
+4081,Assault,114
+5251,Burglary,45
+16705,Drug Offense,9
+19081,Disorderly Conduct,16
+5152,Burglary,74
+10115,Fraud,65
+62040,Warrant,113
+16660,Drug Offense,100
+3013,Robbery,94
+6312,Larceny Theft,45
+9035,Fraud,14
+28120,Malicious Mischief,14
+10070,Embezzlement,1
+60090,Suicide,5
+5241,Burglary,4
+15031,Offences Against The Family And Children,37
+16220,Drug Offense,21
+30140,Other Offenses,43
+5042,Burglary,131
+5111,Burglary,13
+68055,Other Offenses,7
+7052,Embezzlement,54
+26070,Other Miscellaneous,84
+4074,Assault,52
+30130,Other Offenses,65
+3412,Robbery,14
+4023,Assault,48
+9030,Fraud,25
+27172,Other Miscellaneous,38
+3051,Robbery,46
+3053,Robbery,14
+3471,Robbery,44
+30006,Other Offenses,9
+6316,Larceny Theft,10
+4073,Assault,50
+27131,Other Miscellaneous,64
+12130,Weapons Carrying Etc,44
+4072,Assault,1
+15052,Offences Against The Family And Children,31
+11013,Stolen Property,23
+12163,Weapons Carrying Etc,24
+3473,Robbery,45
+6132,Larceny Theft,8
+60010,Suicide,22
+16740,Drug Offense,11
+3043,Robbery,80
+6124,Larceny Theft,13
+3034,Robbery,9
+62070,Warrant,48
+2204,Rape,6
+6400,Larceny Theft,36
+12026,Assault,15
+16629,Drug Offense,9
+4083,Assault,44
+62072,Warrant,27
+26120,Other Miscellaneous,47
+6315,Larceny Theft,16
+19083,Disorderly Conduct,12
+14043,Sex Offense,14
+30155,Other Offenses,73
+3021,Robbery,52
+14015,Sex Offense,27
+27060,Other Miscellaneous,12
+27173,Other Miscellaneous,8
+6111,Larceny Theft,107
+12164,Weapons Carrying Etc,20
+10090,Embezzlement,40
+28092,Malicious Mischief,98
+64090,Other Miscellaneous,44
+28110,Malicious Mischief,33
+27070,Other Miscellaneous,27
+13115,Disorderly Conduct,17
+9267,Fraud,9
+5133,Burglary,5
+15097,Offences Against The Family And Children,3
+30170,Other Offenses,5
+6150,Larceny Theft,12
+12050,Weapons Offence,10
+3421,Robbery,9
+15400,Offences Against The Family And Children,26
+16664,Drug Offense,70
+64072,Suspicious Occ,25
+16510,Drug Offense,2
+64003,Civil Sidewalks,24
+4145,Assault,4
+6120,Larceny Theft,2
+28169,Malicious Mischief,8
+16060,Drug Offense,21
+5061,Burglary,78
+13010,Prostitution,7
+29010,Malicious Mischief,19
+16624,Drug Offense,13
+5113,Burglary,18
+27210,Other Miscellaneous,2
+4024,Assault,17
+15401,Offences Against The Family And Children,5
+10065,Embezzlement,5
+26029,Arson,37
+6342,Larceny Theft,3
+6343,Larceny Theft,4
+9060,Fraud,4
+13030,"Human Trafficking, Commercial Sex Acts",6
+6391,Larceny Theft,4
+1001,Homicide,9
+16040,Drug Offense,18
+5121,Burglary,10
+12166,Weapons Carrying Etc,22
+6123,Larceny Theft,10
+5022,Burglary,9
+16310,Drug Offense,3
+28080,Malicious Mischief,33
+19100,Disorderly Conduct,1
+5031,Burglary,11
+15030,Offences Against The Family And Children,20
+64030,Non-Criminal,19
+14072,Rape,10
+4064,Assault,20
+26035,Arson,2
+12025,Weapons Offense,15
+16632,Drug Offense,7
+28136,Malicious Mischief,15
+17060,Liquor Laws,5
+13120,Disorderly Conduct,4
+5112,Burglary,4
+15150,Offences Against The Family And Children,60
+28103,Malicious Mischief,1
+16230,Drug Offense,3
+12171,Weapons Carrying Etc,37
+3064,Robbery,9
+16610,Drug Offense,1
+12008,Suspicious,34
+27122,Other Miscellaneous,16
+27068,Other Miscellaneous,34
+3494,Robbery,10
+4063,Assault,13
+19082,Disorderly Conduct,6
+3042,Robbery,47
+27080,Other Miscellaneous,3
+26149,Other Miscellaneous,7
+2004,Rape,10
+7201,Forgery And Counterfeiting,5
+7203,Other Miscellaneous,3
+64012,Non-Criminal,17
+64065,Suspicious Occ,62
+60070,Suicide,5
+4053,Assault,3
+68021,Miscellaneous Investigation,4
+26039,Arson,17
+15010,Family Offense,3
+27100,Other Miscellaneous,23
+26142,Other Miscellaneous,41
+3493,Robbery,1
+7024,Motor Vehicle Theft,12
+27066,Other Miscellaneous,13
+31000,Other Offenses,6
+9270,Fraud,4
+3422,Robbery,7
+9271,Fraud,7
+12006,Weapons Offense,16
+3413,Robbery,17
+27140,Other Miscellaneous,13
+17020,Liquor Laws,1
+27177,Other Miscellaneous,42
+3094,Robbery,13
+27197,Other Miscellaneous,2
+30030,Other Offenses,20
+11016,Stolen Property,14
+6214,Larceny Theft,2
+9163,Fraud,3
+5271,Burglary,16
+14052,Rape,9
+19077,Disorderly Conduct,9
+12055,Weapons Offense,9
+12167,Weapons Carrying Etc,22
+65040,Other Miscellaneous,13
+27031,Other Miscellaneous,4
+6310,Larceny Theft,17
+27030,Other Miscellaneous,4
+19075,Disorderly Conduct,8
+64013,Non-Criminal,1
+13111,Prostitution,7
+28167,Malicious Mischief,7
+9022,Fraud,1
+9263,Fraud,1
+16656,Drug Offense,14
+7022,Motor Vehicle Theft,6
+60110,Suicide,5
+15060,Offences Against The Family And Children,4
+26037,Arson,11
+3041,Robbery,40
+14017,Sex Offense,19
+3424,Robbery,23
+13045,"Human Trafficking (A), Commercial Sex Acts",90
+19032,Disorderly Conduct,1
+30000,Other Offenses,11
+4062,Assault,5
+28030,Malicious Mischief,14
+5062,Burglary,11
+19062,Disorderly Conduct,21
+14041,Sex Offense,2
+3092,Robbery,6
+5021,Burglary,25
+3443,Robbery,7
+12172,Weapons Carrying Etc,2
+3451,Robbery,5
+3411,Robbery,29
+3083,Robbery,12
+65055,Other Miscellaneous,10
+17030,Liquor Laws,14
+4091,Assault,1
+4080,Assault,11
+16130,Drug Offense,8
+28130,Malicious Mischief,4
+66040,Gambling,3
+66010,Gambling,11
+17130,Liquor Laws,10
+19060,Disorderly Conduct,2
+12065,Weapons Offense,7
+26010,Other Miscellaneous,1
+9023,Fraud,3
+66030,Gambling,3
+14060,Sex Offense,7
+16666,Drug Offense,4
+30011,Other Offenses,2
+60120,Suicide,4
+16612,Drug Offense,1
+28181,Malicious Mischief,2
+61010,Other,4
+6130,Larceny Theft,5
+29082,Juvenile Offenses,1
+7044,Recovered Vehicle,11
+3441,Robbery,6
+12110,Weapons Carrying Etc,3
+3454,Robbery,3
+16642,Drug Offense,4
+9269,Fraud,14
+6230,Larceny Theft,5
+3082,Robbery,7
+15054,Offences Against The Family And Children,1
+16750,Drug Offense,2
+13020,Prostitution,3
+30160,Other Offenses,1
+28020,Malicious Mischief,6
+29110,Juvenile Offenses,9
+9125,Forgery And Counterfeiting,6
+9175,Forgery And Counterfeiting,4
+27176,Other Miscellaneous,13
+65013,Other Miscellaneous,1
+9162,Fraud,1
+6231,Larceny Theft,4
+16020,Drug Offense,23
+26140,Other Miscellaneous,2
+26020,Other Miscellaneous,7
+27185,Other Miscellaneous,3
+30180,Other Offenses,14
+16050,Drug Offense,6
+3442,Robbery,8
+11015,Stolen Property,6
+16626,Drug Offense,13
+19080,Disorderly Conduct,3
+12090,Weapons Carrying Etc,4
+16320,Drug Offense,1
+3491,Robbery,2
+10060,Embezzlement,3
+26148,Other Miscellaneous,22
+2010,Rape,6
+9166,Fraud,10
+12161,Weapons Carrying Etc,4
+12169,Weapons Carrying Etc,1
+2201,Rape,1
+9210,Forgery And Counterfeiting,5
+16640,Drug Offense,8
+2103,Rape,2
+64014,Non-Criminal,1
+15301,Offences Against The Family And Children,1
+6395,Larceny Theft,1
+26038,Arson,2
+10117,Fraud,7
+16630,Drug Offense,4
+9165,Fraud,2
+10055,Embezzlement,2
+2104,Rape,13
+27145,Other Miscellaneous,8
+26143,Other Miscellaneous,4
+19053,Disorderly Conduct,3
+5131,Burglary,1
+13070,Prostitution,13
+3091,Robbery,4
+12160,Weapons Carrying Etc,1
+3031,Robbery,6
+27020,Other Miscellaneous,4
+3462,Robbery,2
+14042,Sex Offense,6
+14045,Sex Offense,3
+6143,Larceny Theft,4
+28168,Malicious Mischief,2
+2202,Rape,1
+9010,Other Miscellaneous,1
+10085,Embezzlement,1
+30191,Other Offenses,1
+16760,Drug Offense,2
+3461,Robbery,3
+6344,Larceny Theft,6
+7042,Recovered Vehicle,3
+3061,Robbery,7
+9266,Fraud,3
+6121,Larceny Theft,1
+2020,Rape,2
+26160,Other Miscellaneous,1
+3062,Robbery,3
+6141,Larceny Theft,1
+60180,Suicide,3
+28040,Malicious Mischief,3
+60150,Suicide,5
+3452,Robbery,2
+60170,Suicide,6
+15090,Offences Against The Family And Children,3
+3463,Robbery,6
+6341,Larceny Theft,2
+6213,Larceny Theft,1
+16646,Drug Offense,1
+27201,Other Miscellaneous,3
+12024,Weapons Offense,4
+9176,Fraud,2
+1004,Homicide,1
+3423,Robbery,3
+12070,Weapons Carrying Etc,2
+5231,Burglary,1
+27196,Other Miscellaneous,1
+15153,Offences Against The Family And Children,3
+27200,Other Miscellaneous,2
+19086,Disorderly Conduct,1
+15163,Offences Against The Family And Children,1
+65014,Other Miscellaneous,5
+10010,Embezzlement,7
+1003,Homicide,3
+68057,Other Offenses,1
+64017,Non-Criminal,2
+10050,Embezzlement,1
+26211,Other Miscellaneous,1
+2102,Rape,1
+10020,Embezzlement,2
+9161,Fraud,1
+17080,Liquor Laws,14
+7206,Other Miscellaneous,5
+28050,Malicious Mischief,1
+5261,Burglary,1
+19076,Disorderly Conduct,1
+26061,Other Miscellaneous,2
+6375,Larceny Theft,1
+30131,Other Offenses,1
+16711,Drug Offense,2
+4054,Assault,1
+28170,Malicious Mischief,2
+27155,Other Miscellaneous,1
+15302,Offences Against The Family And Children,1
+13110,Prostitution,2
+4061,Assault,1
+19015,Disorderly Conduct,1
+16240,Drug Offense,1
+30070,Other Offenses,1
+4093,Assault,1
+3434,Robbery,1
+27174,Other Miscellaneous,2
+15303,Offences Against The Family And Children,1
+2005,Rape,1
+12040,Weapons Offense,3
+6131,Larceny Theft,1
+1002,Homicide,6
+3483,Robbery,1
+6340,Larceny Theft,1
+26177,Other Miscellaneous,2
+3492,Robbery,2
+19072,Disorderly Conduct,2
+10075,Embezzlement,2
+4146,Assault,2
+26190,Other Miscellaneous,2
+10140,Fraud,1
+27072,Other Miscellaneous,2
+6142,Larceny Theft,1
+19088,Disorderly Conduct,1
+26062,Other Miscellaneous,2
+16636,Drug Offense,1
+64018,Non-Criminal,1
+1000,Homicide,1
+5162,Burglary,1
+30120,Other Offenses,1
+5211,Burglary,1
+60160,Suicide,1
+5172,Burglary,2
+51020,Non-Criminal,1
+3453,Robbery,1
+5163,Burglary,2
+29070,Juvenile Offenses,1
+72023,Non-Criminal,1
+19058,Disorderly Conduct,1
+3093,Robbery,1
+3481,Robbery,1
+10025,Embezzlement,2
+4052,Assault,1
+3433,Robbery,1
+19084,Disorderly Conduct,1
+6122,Larceny Theft,1

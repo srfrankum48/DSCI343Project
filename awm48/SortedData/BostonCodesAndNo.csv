@@ -1,0 +1,224 @@
+Code,Code Description,Number of Occurences
+619,Larceny,5970
+1402,Vandalism,15154
+3410,Towed,11287
+3114,Investigate Property,11124
+3820,Motor Vehicle Accident Response,1656
+724,Auto Theft,3630
+3301,Verbal Disputes,13099
+301,Robbery,3056
+3108,Fire Related Reports,1269
+2647,Other,9042
+3201,Property Lost,8893
+3006,Medical Assistance,18783
+3305,Assembly or Gathering Violations,279
+614,Larceny From Motor Vehicle,8894
+3801,Motor Vehicle Accident Response,2925
+3803,Motor Vehicle Accident Response,5131
+522,Residential Burglary,2359
+3831,Motor Vehicle Accident Response,16323
+802,Simple Assault,14799
+2007,Restraining Order Violations,1338
+2900,Other,2894
+2907,Violations,2616
+2629,Harassment,4007
+2662,Ballistics,981
+3207,Property Found,3698
+613,Larceny,7953
+3109,Police Service Incidents,2559
+2612,Fire Related Reports,126
+1843,Drug Violation,2109
+3125,Warrant Arrests,8407
+1841,Drug Violation,1329
+3802,Motor Vehicle Accident Response,6557
+3018,Medical Assistance,1405
+2405,Disorderly Conduct,1398
+617,Larceny,9074
+3625,Other,307
+3106,Property Related Damage,912
+3501,Missing Person Reported,3766
+3115,Investigate Person,18750
+616,Larceny,2268
+3807,Motor Vehicle Accident Response,732
+1102,Fraud,4414
+1849,Drug Violation,2591
+2905,Violations,1963
+1810,Drug Violation,1991
+1842,Drug Violation,1519
+1806,Drug Violation,177
+1848,Drug Violation,887
+1844,Drug Violation,458
+423,Aggravated Assault,2911
+3205,License Plate Related Incidents,493
+413,Aggravated Assault,4887
+1501,Firearm Violations,900
+3001,Medical Assistance,1215
+3830,Motor Vehicle Accident Response,1286
+561,Other Burglary,41
+2914,Violations,463
+2610,Other,3254
+1109,Fraud,334
+706,Auto Theft,815
+2403,Disorderly Conduct,837
+3160,Fire Related Reports,525
+900,Arson,94
+801,Simple Assault,962
+3002,Medical Assistance,367
+520,Residential Burglary,2585
+2648,Bomb Hoax,75
+670,License Plate Related Incidents,67
+615,Larceny From Motor Vehicle,1951
+3116,Harbor Related Incidents,212
+1504,Other,147
+1830,Drug Violation,1205
+361,Robbery,635
+2006,Restraining Order Violations,269
+311,Robbery,554
+1001,Counterfeiting,1452
+3810,Motor Vehicle Accident Response,916
+2401,Disorderly Conduct,249
+2646,Liquor Violation,796
+3821,Motor Vehicle Accident Response,414
+3811,Motor Vehicle Accident Response,426
+3007,Medical Assistance,1347
+2660,Other,644
+1831,Drug Violation,311
+3119,Firearm Discovery,688
+3170,Other,309
+1874,Drug Violation,1274
+3112,Landlord/Tenant Disputes,968
+3502,Missing Person Located,4365
+735,Auto Theft Recovery,1051
+612,Larceny,188
+560,Other Burglary,249
+381,Robbery,86
+3402,Service,285
+1815,Drug Violation,195
+1107,Fraud,1065
+2101,Operating Under the Influence,484
+1106,Confidence Games,3147
+3202,Property Found,227
+1503,Firearm Violations,626
+1846,Drug Violation,586
+3016,Medical Assistance,10
+3304,Assembly or Gathering Violations,620
+611,Larceny,455
+2622,Other,48
+3130,Search Warrants,966
+2407,Disorderly Conduct,127
+2657,Other,370
+3111,License Violation,1701
+3503,Missing Person Located,593
+2906,Violations,1051
+540,Commercial Burglary,914
+3208,Property Lost,858
+1832,Drug Violation,337
+521,Residential Burglary,661
+1847,Drug Violation,205
+1510,Firearm Violations,238
+1850,Drug Violation,154
+2010,HOME INVASION,77
+2616,Other,227
+1304,Recovered Stolen Property,452
+2511,Other,44
+2005,Offenses Against Child / Family,256
+1605,Prostitution,13
+3805,Motor Vehicle Accident Response,766
+1300,Recovered Stolen Property,1001
+2102,Operating Under the Influence,90
+3008,Medical Assistance,356
+2632,Evading Fare,407
+3102,Other,194
+1415,Vandalism,261
+542,Commercial Burglary,310
+2663,Other,51
+1805,Drug Violation,132
+3620,Other,166
+2604,Other,188
+371,Robbery,104
+2204,Liquor Violation,256
+2619,Prisoner Related Incidents,220
+727,Auto Theft,403
+804,Simple Assault,62
+2003,Offenses Against Child / Family,186
+1845,Drug Violation,897
+111,Homicide,161
+2613,Other,64
+1201,Embezzlement,296
+2617,Drug Violation,19
+3123,Explosives,14
+3110,Police Service Incidents,195
+541,Commercial Burglary,112
+2670,Criminal Harassment,131
+2623,Other,80
+2608,Offenses Against Child / Family,36
+3004,Medical Assistance,57
+2618,Explosives,13
+562,Other Burglary,171
+1108,Fraud,15
+1825,Drug Violation,75
+2628,Phone Call Complaints,31
+1870,Drug Violation,86
+351,Robbery,181
+1602,Prostitution,161
+3122,Aircraft,36
+3303,Assembly or Gathering Violations,29
+1807,Drug Violation,6
+2636,Prisoner Related Incidents,9
+2611,Other,12
+618,Larceny,16
+3203,Firearm Discovery,10
+3302,Assembly or Gathering Violations,27
+2605,Offenses Against Child / Family,8
+3403,Police Service Incidents,27
+2004,Offenses Against Child / Family,59
+2641,Other,15
+2631,Other,10
+3029,Prisoner Related Incidents,23
+2642,Missing Person Reported,31
+1502,Firearm Violations,13
+2672,Biological Threat,2
+121,Manslaughter,5
+1601,Prostitution,29
+2606,Prisoner Related Incidents,1
+1901,Gambling,8
+2664,Other,9
+3115,INVESTIGATE PERSON,4
+1610,HUMAN TRAFFICKING,7
+123,Manslaughter,2
+1620,HUMAN TRAFFICKING - INVOLUNTARY SERVITUDE,2
+1603,Prostitution,4
+2609,Drug Violation,1
+112,Manslaughter,1
+624,Larceny From Motor Vehicle,1
+633,Larceny,4
+403,Aggravated Assault,6
+404,Aggravated Assault,1
+1863,Drug Violation,1
+803,Simple Assault,3
+770,Auto Theft,2
+349,Robbery,1
+432,Aggravated Assault,1
+339,Robbery,3
+1002,Counterfeiting,2
+335,Robbery,1
+627,Larceny,1
+629,Larceny,2
+1302,Recovered Stolen Property,2
+315,Robbery,1
+634,Larceny From Motor Vehicle,1
+1866,Drug Violation,2
+402,Aggravated Assault,1
+2910,Violations,2
+637,Larceny,1
+639,Larceny,1
+511,Residential Burglary,1
+714,Auto Theft,1
+1105,Fraud,1
+527,Burglary - No Property Taken,1
+623,Larceny,2
+338,Robbery,1
+547,Burglary - No Property Taken,1
+334,Robbery,1
+530,Commercial Burglary,1
+1864,Drug Violation,1

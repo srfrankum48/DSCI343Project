@@ -48,8 +48,38 @@ def getNYCrimesByCode(csvFileLoc, *codes):
         writer = csv.writer(csvFile)
         writer.writerows(crimes)
 
+def getAllOffenseCodesNY(csvFileLoc):
+    codes = []
+    codes.append(["Code", "Code Description", "Number of Occurences"])
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        next(plots)
+        for row in plots:
+            try:
+                rowCode = int(row[8])
+                rowCodeDesc = row[9]
+            except:
+                print(row[8])
+                print(row[9])
+            else:
+                #check if the code and desc exist in codes then add one to their total number
+                if rowCodeDesc == "":
+                    print("No row code description: ", rowCode)
+                elif any(((rowCode in sublist) & (rowCodeDesc in sublist)) for sublist in codes):
+                    for i in range(len(codes)):
+                        if (codes[i][0] == rowCode) & (codes[i][1] == rowCodeDesc):
+                            codes[i][2] += 1
+                            break
+                #Else (code and desc dont exist) add code and description to codes, set total number to 1
+                else:
+                    codes.append([rowCode, rowCodeDesc, 1])
+    csvLoc = baseDirectory + "NewYorkCodesAndNo.csv"
+    with open(csvLoc, 'w', newline='') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerows(codes)
+        
 #getNYCrimesByCode(NYcsv, 333, 511)
-            
+#getAllOffenseCodesNY(NYcsv)          
 #San Francisco
 def getSFCrimesByCode(csvFileLoc, *codes):
     crimes = []
@@ -77,8 +107,39 @@ def getSFCrimesByCode(csvFileLoc, *codes):
         writer = csv.writer(csvFile)
         writer.writerows(crimes)
 
-#getSFCrimesByCode(SFcsv, 4134, 28160)
+def getAllOffenseCodesSF(csvFileLoc):
+    codes = []
+    codes.append(["Code", "Code Description", "Number of Occurences"])
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        next(plots)
+        for row in plots:
+            try:
+                rowCode = int(row[13])
+                rowCodeDesc = row[14]
+            except:
+                print(row[13])
+                print(row[14])
+            else:
+                #check if the code and desc exist in codes then add one to their total number
+                if rowCodeDesc == "":
+                    print("No row code description: ", rowCode)
+                elif any(((rowCode in sublist) & (rowCodeDesc in sublist)) for sublist in codes):
+                    for i in range(len(codes)):
+                        if (codes[i][0] == rowCode) & (codes[i][1] == rowCodeDesc):
+                            codes[i][2] += 1
+                            break
+                #Else (code and desc dont exist) add code and description to codes, set total number to 1
+                else:
+                    codes.append([rowCode, rowCodeDesc, 1])
+    csvLoc = baseDirectory + "SanFranciscoCodesAndNo.csv"
+    codes[0].sort()
+    with open(csvLoc, 'w', newline='') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerows(codes)
 
+#getSFCrimesByCode(SFcsv, 4134, 28160)
+#getAllOffenseCodesSF(SFcsv)
 #Los Angeles     
 def getLACrimesByCode(csvFileLoc, *codes):
     crimes = []
@@ -107,6 +168,46 @@ def getLACrimesByCode(csvFileLoc, *codes):
         writer.writerows(crimes)
  
 #getLACrimesByCode(LAcsv, 510, 626)
+
+def addToRowCode(rowCode, rowCodeDesc, codes):
+    for sublist in codes:
+        if sublist[0] == rowCode & (sublist[1] == rowCodeDesc):
+            sublist[2] += 1
+            return codes
+    return codes
+
+def getAllOffenseCodesLA(csvFileLoc):
+    codes = []
+    codes.append(["Code", "Code Description", "Number of Occurences"])
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        next(plots)
+        for row in plots:
+            try:
+                rowCode = int(row[7])
+                rowCodeDesc = row[8]
+            except:
+                print(row[7])
+                print(row[8])
+            else:
+                #check if the code and desc exist in codes then add one to their total number
+                if rowCodeDesc == "":
+                    print("No row code description: ", rowCode)
+                elif any(((rowCode in sublist) & (rowCodeDesc in sublist)) for sublist in codes):
+                    for i in range(len(codes)):
+                        if (codes[i][0] == rowCode) & (codes[i][1] == rowCodeDesc):
+                            codes[i][2] += 1
+                            break
+                #Else (code and desc dont exist) add code and description to codes, set total number to 1
+                else:
+                    codes.append([rowCode, rowCodeDesc, 1])
+    csvLoc = baseDirectory + "LosAngelesCodesAndNo.csv"
+    codes[0].sort()
+    with open(csvLoc, 'w', newline='') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerows(codes)
+            
+#getAllOffenseCodesLA(LAcsv)  
         
 #Boston      
 def getBostonCrimesByCode(csvFileLoc, *codes):
@@ -134,9 +235,39 @@ def getBostonCrimesByCode(csvFileLoc, *codes):
     with open(csvLoc, 'w', newline='') as csvFile:
         writer = csv.writer(csvFile)
         writer.writerows(crimes)              
-        
+
+def getAllOffenseCodesBO(csvFileLoc):
+    codes = []
+    codes.append(["Code", "Code Description", "Number of Occurences"])
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        next(plots)
+        for row in plots:
+            try:
+                rowCode = int(row[1])
+                rowCodeDesc = row[2]
+            except:
+                print(row[1])
+                print(row[2])
+            else:
+                #check if the code and desc exist in codes then add one to their total number
+                if rowCodeDesc == "":
+                    print("No row code description: ", rowCode)
+                elif any(((rowCode in sublist) & (rowCodeDesc in sublist)) for sublist in codes):
+                    for i in range(len(codes)):
+                        if (codes[i][0] == rowCode) & (codes[i][1] == rowCodeDesc):
+                            codes[i][2] += 1
+                            break
+                #Else (code and desc dont exist) add code and description to codes, set total number to 1
+                else:
+                    codes.append([rowCode, rowCodeDesc, 1])
+    csvLoc = baseDirectory + "BostonCodesAndNo.csv"
+    with open(csvLoc, 'w', newline='') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerows(codes)        
+
 #getBostonCrimesByCode(BOcsv, 612, 613)
-        
+getAllOffenseCodesBO(BOcsv)        
 #Chicago 
 def getChicagoCrimesByCode(csvFileLoc, *codes):
     crimes = []
@@ -191,6 +322,38 @@ def getChicagoCrimesByCodeAllCSVs(*codes):
         writer = csv.writer(csvFile)
         writer.writerows(crimes)
 
+
+def getAllOffenseCodesCO():
+    codes = []
+    codes.append(["Code", "Code Description", "Number of Occurences"])
+    for csvs in COcsv:
+        with open(csvs,'r') as csvfile:
+            plots = csv.reader(csvfile, delimiter=',')
+            next(plots)
+            for row in plots:
+                try:
+                    rowCode = row[5]
+                    rowCodeDesc = row[6]
+                except:
+                    print(row[5])
+                    print(row[6])
+                else:
+                    #check if the code and desc exist in codes then add one to their total number
+                    if rowCodeDesc == "":
+                        print("No row code description: ", rowCode)
+                    elif any(((rowCode in sublist) & (rowCodeDesc in sublist)) for sublist in codes):
+                        for i in range(len(codes)):
+                            if (codes[i][0] == rowCode) & (codes[i][1] == rowCodeDesc):
+                                codes[i][2] += 1
+                                break
+                    #Else (code and desc dont exist) add code and description to codes, set total number to 1
+                    else:
+                        codes.append([rowCode, rowCodeDesc, 1])
+    csvLoc = baseDirectory + "ChicagoCodesAndNo.csv"
+    with open(csvLoc, 'w', newline='') as csvFile:
+        writer = csv.writer(csvFile)
+        writer.writerows(codes)
 #code for Chicago must be 4 characters long or it won't work           
 #getChicagoCrimesByCode(COcsv4, "0486", "0820")
 #getChicagoCrimesByCodeAllCSVs("0486")
+getAllOffenseCodesCO()
