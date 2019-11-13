@@ -79,7 +79,7 @@ def getAllOffenseCodesNY(csvFileLoc):
         writer = csv.writer(csvFile)
         writer.writerows(codes)
         
-#getNYCrimesByCode(NYcsv, 333, 511)
+#getNYCrimesByCode(NYcsv, 379, 380, 397) #robbery
 #getAllOffenseCodesNY(NYcsv)          
 #San Francisco
 def getSFCrimesByCode(csvFileLoc, *codes):
@@ -139,7 +139,7 @@ def getAllOffenseCodesSF(csvFileLoc):
         writer = csv.writer(csvFile)
         writer.writerows(codes)
 
-#getSFCrimesByCode(SFcsv, 4134, 28160)
+getSFCrimesByCode(SFcsv, 3474, 3401, 3071, 3023, 3012, 3044, 3054, 3014, 3011, 3072, 3472, 3024, 3063, 3022, 3414, 3073, 3444, 3052, 3084, 3464, 3081, 3013, 3412, 3051, 3053, 3471, 3473, 3043, 3034, 3021, 3421)
 #getAllOffenseCodesSF(SFcsv)
 #Los Angeles     
 def getLACrimesByCode(csvFileLoc, *codes):
@@ -167,15 +167,6 @@ def getLACrimesByCode(csvFileLoc, *codes):
     with open(csvLoc, 'w', newline='') as csvFile:
         writer = csv.writer(csvFile)
         writer.writerows(crimes)
- 
-#getLACrimesByCode(LAcsv, 510, 626)
-
-def addToRowCode(rowCode, rowCodeDesc, codes):
-    for sublist in codes:
-        if sublist[0] == rowCode & (sublist[1] == rowCodeDesc):
-            sublist[2] += 1
-            return codes
-    return codes
 
 def getAllOffenseCodesLA(csvFileLoc):
     codes = []
@@ -209,7 +200,7 @@ def getAllOffenseCodesLA(csvFileLoc):
         writer.writerows(codes)
             
 #getAllOffenseCodesLA(LAcsv)  
-        
+#getLACrimesByCode(LAcsv, 210, 220)       
 #Boston      
 def getBostonCrimesByCode(csvFileLoc, *codes):
     crimes = []
@@ -267,7 +258,7 @@ def getAllOffenseCodesBO(csvFileLoc):
         writer = csv.writer(csvFile)
         writer.writerows(codes)        
 
-#getBostonCrimesByCode(BOcsv, 612, 613)
+#getBostonCrimesByCode(BOcsv, 301, 311, 351, 361, 371, 381)
 #getAllOffenseCodesBO(BOcsv)        
 #Chicago 
 def getChicagoCrimesByCode(csvFileLoc, *codes):
@@ -356,7 +347,7 @@ def getAllOffenseCodesCO():
         writer.writerows(codes)
 #code for Chicago must be 4 characters long or it won't work           
 #getChicagoCrimesByCode(COcsv4, "0486", "0820")
-#getChicagoCrimesByCodeAllCSVs("0486")
+#getChicagoCrimesByCodeAllCSVs("0312", "0313", "031A", "031B", "0320", "0325", "0326", "0330", "0331", "0334", "0337", "033A", "033B", "0340")
 #getAllOffenseCodesCO()
         
 #Pie Charts
