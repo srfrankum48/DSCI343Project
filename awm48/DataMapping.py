@@ -7,6 +7,7 @@ Project Work with Data Mapping
 """
 import csv
 import matplotlib.pyplot as plt
+import numpy as np
 
 #CHANGE ME
 baseDirectory = 'C:\\Users\\Regina\\Documents\\GitHub\\DSCI343Project\\awm48\\SortedData\\'
@@ -22,28 +23,36 @@ COcsv3 = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Pro
 COcsv4 = 'C:\\Users\\Regina\\Documents\\Academics\\Fall 2019\\Data Analysis\\Project\\ChicagoCrimes2012to2017.csv'
 COcsv = [COcsv1, COcsv2, COcsv3, COcsv4]
 
+'''
+#keywords
+Larceny
+Burglary
+Robbery
+Assault
+Drug
+'''
+
 #New York
-def getNYCrimesByCode(csvFileLoc, *codes):
+def getNYCrimesByCode(csvFileLoc, codes, crimeWord):
     crimes = []
-    csvLoc = baseDirectory + "NewYorkCrimeCode"
+    csvLoc = baseDirectory + "NewYork" + crimeWord
     headerFlag = True
-    for code in codes:
-        with open(csvFileLoc,'r') as csvfile:
-            plots = csv.reader(csvfile, delimiter=',')
-            if headerFlag:
-                crimes.append(next(plots))
-                headerFlag = False
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        if headerFlag:
+            crimes.append(next(plots))
+            headerFlag = False
+        else:
+            next(plots)
+        for row in plots:
+            try:
+                rowPDCode = int(row[8])
+            except:
+                print(row[8])
             else:
-                next(plots)
-            for row in plots:
-                try:
-                    rowPDCode = int(row[8])
-                except:
-                    print(row[8])
-                else:
+                for code in codes:
                     if rowPDCode == code: #row[8] is pdcode in NYCrimes.csv
                         crimes.append(row)
-        csvLoc += '_' + str(code)
     csvLoc += '.csv'
     with open(csvLoc, 'w', newline='') as csvFile:
         writer = csv.writer(csvFile)
@@ -78,8 +87,8 @@ def getAllOffenseCodesNY(csvFileLoc):
     with open(csvLoc, 'w', newline='') as csvFile:
         writer = csv.writer(csvFile)
         writer.writerows(codes)
-        
-#getNYCrimesByCode(NYcsv, 379, 380, 397) #robbery
+       
+#getNYCrimesByCode(NYcsv, 379, 380, 397) 
 #getAllOffenseCodesNY(NYcsv)          
 #San Francisco
 def getSFCrimesByCode(csvFileLoc, *codes):
@@ -139,7 +148,7 @@ def getAllOffenseCodesSF(csvFileLoc):
         writer = csv.writer(csvFile)
         writer.writerows(codes)
 
-getSFCrimesByCode(SFcsv, 3474, 3401, 3071, 3023, 3012, 3044, 3054, 3014, 3011, 3072, 3472, 3024, 3063, 3022, 3414, 3073, 3444, 3052, 3084, 3464, 3081, 3013, 3412, 3051, 3053, 3471, 3473, 3043, 3034, 3021, 3421)
+#getSFCrimesByCode(SFcsv, 3474, 3401, 3071, 3023, 3012, 3044, 3054, 3014, 3011, 3072, 3472, 3024, 3063, 3022, 3414, 3073, 3444, 3052, 3084, 3464, 3081, 3013, 3412, 3051, 3053, 3471, 3473, 3043, 3034, 3021, 3421)
 #getAllOffenseCodesSF(SFcsv)
 #Los Angeles     
 def getLACrimesByCode(csvFileLoc, *codes):
@@ -370,19 +379,77 @@ def makePieChart(csvFileLoc, title, crimeLimit):
     fig = plt.gcf()
     fig.set_size_inches(18.5, 10.5)
     fig.savefig(baseDirectory + title + '.png', dpi=100)
-    plt.show()     
+    plt.show()
 
-#csvLocSF = baseDirectory + "SanFranciscoCodesAndNo.csv"
+def makePieChartFromDescription(csvFileLoc, title, crime):
+    sizes = 0
+    codes = []
+    total = 0
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        next(plots)
+        for row in plots:
+            total += int(row[2])
+            if crime.lower() in row[1].lower() :
+                sizes += int(row[2])
+                codes.append(int(row[0]))
+    print(sizes / total)
+    return codes
+#    sizes.sort()
+#    plt.legend(labels, loc="best")
+#    plt.axis('equal')
+#    plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+#    plt.title(title)
+#    fig = plt.gcf()
+#    fig.set_size_inches(18.5, 10.5)
+#    fig.savefig(baseDirectory + title + '.png', dpi=100)
+#    plt.show()      
+
+
+csvLocSF = baseDirectory + "SanFranciscoCodesAndNo.csv"
 #makePieChart(csvLocSF, "San Francisco Total Crime", 4000) 
+#makePieChartFromDescription(csvLocSF, "abc", "Theft")
+c = makePieChartFromDescription(csvLocSF, "abc", "Assault")     
+getNYCrimesByCode(NYcsv, c, "Assault") 
+    
+csvLocLA = baseDirectory + "LosAngelesCodesAndNo.csv"
+#makePieChart(csvLocLA, "Los Angeles Total Crime", 12000) 
+#makePieChartFromDescription(csvLocLA, "Abc", "")
 
-#csvLocSF = baseDirectory + "LosAngelesCodesAndNo.csv"
-#makePieChart(csvLocSF, "Los Angeles Total Crime", 12000) 
 
-#csvLocSF = baseDirectory + "ChicagoCodesAndNo.csv"
-#makePieChart(csvLocSF, "Chicago Total Crime", 50000) 
+csvLocCO = baseDirectory + "ChicagoCodesAndNo.csv"
+#makePieChart(csvLocCO, "Chicago Total Crime", 50000) 
 
-#csvLocSF = baseDirectory + "BostonCodesAndNo.csv"
-#makePieChart(csvLocSF, "Boston Total Crime", 5000) 
+csvLocBO = baseDirectory + "BostonCodesAndNo.csv"
+#makePieChart(csvLocBO, "Boston Total Crime", 5000) 
+#makePieChartFromDescription(csvLocBO, "Boston Total Crime", "Other") 
 
-#csvLocSF = baseDirectory + "NewYorkCodesAndNo.csv"
-#makePieChart(csvLocSF, "New York Total Crime", 15000)            
+csvLocNY = baseDirectory + "NewYorkCodesAndNo.csv"
+#makePieChart(csvLocNY, "New York Total Crime", 15000)   
+#makePieChartFromDescription(csvLocNY, "New York Total Crime", "ROBBERY")  
+
+def crimePerMonthBarChart(csvFileLoc, dateRow):
+    crime = [0,0,0,0,0,0,0,0,0,0,0,0,0]
+    with open(csvFileLoc,'r') as csvfile:
+        plots = csv.reader(csvfile, delimiter=',')
+        next(plots)
+        for row in plots:
+            try:
+                date = row[dateRow]
+                month = int(date[:2])
+            except:
+                print(row[dateRow])
+            else:
+                crime[month] += 1
+    bars = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+    y_pos = np.arange(len(bars))
+    plt.bar(bars, height = crime[1:])
+    plt.title(label = 'Robbery per month in New York')
+    plt.xticks(y_pos, bars)
+    plt.show()
+    
+#crimePerMonthBarChart(baseDirectory + "BostonCrimeCode_301_311_351_361_371_381.csv", 9)
+#crimePerMonthBarChart(baseDirectory + "SanFranciscoCrimeCode_3474_3401_3071_3023_3012_3044_3054_3014_3011_3072_3472_3024_3063_3022_3414_3073_3444_3052_3084_3464_3081_3013_3412_3051_3053_3471_3473_3043_3034_3021_3421.csv", 1)
+#crimePerMonthBarChart(baseDirectory + "ChicagoCrimeCode_0312_0313_031A_031B_0320_0325_0326_0330_0331_0334_0337_033A_033B_0340_From2001.csv", 3)        
+#crimePerMonthBarChart(baseDirectory + "LosAngelesCrimeCode_210_220.csv", 1)
+#crimePerMonthBarChart(baseDirectory + "NewYorkCrimeCode_379_380_397.csv", 1)
